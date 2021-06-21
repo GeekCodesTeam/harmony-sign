@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
+            storePassword '0000001B3B73C671374D858277105D82AB4815C2C573D9280FD522A89E8AA677E1E33EF2A22FC967EE6670'
+            keyAlias = 'harmony'
+            keyPassword '0000001B37EC40FB85DC4098051B0156F8DFFF66286426E870B00A144C870BD42574A5EA5D99544160FF58'
+            signAlg = 'SHA256withECDSA'
+            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+        }
+        release {
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
+            storePassword '0000001B553E36DF5D9C78696A6C396AA573733789D21F0BDA3FAA2189B5D3A3AA9F61A5BAEFBF426C66CC'
+            keyAlias = 'harmony'
+            keyPassword '0000001BC293E9DBE63049E8B3FC5ED49CBEA9CE9C744829E8AB18C5FD26DA52A7E0588697EA6B366457B3'
+            signAlg = 'SHA256withECDSA'
+            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+        }
+    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:2.4.4.2'
+        classpath 'com.huawei.ohos:decctest:1.2.4.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        jcenter()
+    }
+}

@@ -1,0 +1,50 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
+            storePassword '0000001BEA1A633EEA13E775A4AB9F5C9F7E4515416152D9D6CC5EC95D973D01EA64E69ACE4302198B5C60'
+            keyAlias = 'harmony'
+            keyPassword '0000001B6D6821AEF43C87DBFB4408F637C9EE7B9FA82DB574B888BE0F9FE7054EB3E312CB19927AC60F1B'
+            signAlg = 'SHA256withECDSA'
+            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+        }
+        release {
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
+            storePassword '0000001BF220007ABB668AEE07E4C659E71321F62F72AC941CF1DF8C2F89C556978BC460C0A2C4892BB466'
+            keyAlias = 'harmony'
+            keyPassword '0000001B104115F63EAEEAAB64B56E0AB2A4D47ED93F63B92E00F75B8CF44E009D376A90DF32D885D899F2'
+            signAlg = 'SHA256withECDSA'
+            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+        }
+    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+//                signingConfig signingConfigs.release
+            }
+        }
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
+}
+decc {
+    supportType = ['html', 'xml']
+}
