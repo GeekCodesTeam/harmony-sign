@@ -1,6 +1,6 @@
-package com.example.myapplication10;
+package com.fosung.lighthouse.test;
 
-import com.example.myapplication10.slice.MainAbilitySlice;
+import com.fosung.lighthouse.test.slice.MainAbilitySlice;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;
 

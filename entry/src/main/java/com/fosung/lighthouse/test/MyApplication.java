@@ -1,4 +1,4 @@
-package com.example.myapplication10;
+package com.fosung.lighthouse.test;
 
 import ohos.aafwk.ability.AbilityPackage;
 

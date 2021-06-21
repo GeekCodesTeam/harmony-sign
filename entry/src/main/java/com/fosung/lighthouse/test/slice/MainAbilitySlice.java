@@ -1,6 +1,6 @@
-package com.example.myapplication10.slice;
+package com.fosung.lighthouse.test.slice;
 
-import com.example.myapplication10.ResourceTable;
+import com.fosung.lighthouse.test.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 

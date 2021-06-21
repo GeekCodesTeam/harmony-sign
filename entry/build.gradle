@@ -2,6 +2,12 @@ apply plugin: 'com.huawei.ohos.hap'
 apply plugin: 'com.huawei.ohos.decctest'
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
 ohos {
+
+    
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
     signingConfigs {
         debug {
             storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
@@ -22,11 +28,12 @@ ohos {
             certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
         }
     }
-    compileSdkVersion 5
-    defaultConfig {
-        compatibleSdkVersion 5
+    legacyApkOptions{
+        legacyApk rootProject.file('./android/android_entry.apk').absolutePath //混入apk的存放路径
+        signConfig{
+            storeFile rootProject.file('./android/harmony.jks')   //混入apk所用签名文件
+        }
     }
-
     buildTypes {
         release {
             proguardOpt {
