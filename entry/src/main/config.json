@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.fosung.lighthouse.test",
+    "bundleName": "com.fosung.lighthouse.test1",
     "vendor": "example",
     "version": {
       "code": 1000000,
@@ -9,9 +9,9 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.fosung.lighthouse.test",
+    "package": "com.fosung.lighthouse.test1",
     "name": ".MyApplication",
-    "mainAbility": "com.fosung.lighthouse.test.MainAbility",
+    "mainAbility": "com.fosung.lighthouse.test1.MainAbility",
     "deviceType": [
       "phone",
       "tablet",
@@ -38,7 +38,7 @@
           }
         ],
         "orientation": "unspecified",
-        "name": "com.fosung.lighthouse.test.MainAbility",
+        "name": "com.fosung.lighthouse.test1.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:entry_MainAbility",

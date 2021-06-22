@@ -3,35 +3,35 @@ apply plugin: 'com.huawei.ohos.decctest'
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
 ohos {
 
-    
+
     compileSdkVersion 5
     defaultConfig {
         compatibleSdkVersion 5
     }
     signingConfigs {
         debug {
-            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
-            storePassword '0000001BEA1A633EEA13E775A4AB9F5C9F7E4515416152D9D6CC5EC95D973D01EA64E69ACE4302198B5C60'
-            keyAlias = 'harmony'
-            keyPassword '0000001B6D6821AEF43C87DBFB4408F637C9EE7B9FA82DB574B888BE0F9FE7054EB3E312CB19927AC60F1B'
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
+            storePassword '0000001E5884B64FFDB27B15761D3DDC7F37CB4561533A9048F55A4C4BC75CCC74430F8609C2579D057AEBCCC07B'
+            keyAlias = 'harmonyandroid'
+            keyPassword '0000001E33D6E2180CB3F90713644642B52D5877AA5B1602300510A8D8C6E891A487867F71D093DA2DD0172C3197'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
-            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidRelease.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
         }
         release {
-            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
-            storePassword '0000001BF220007ABB668AEE07E4C659E71321F62F72AC941CF1DF8C2F89C556978BC460C0A2C4892BB466'
-            keyAlias = 'harmony'
-            keyPassword '0000001B104115F63EAEEAAB64B56E0AB2A4D47ED93F63B92E00F75B8CF44E009D376A90DF32D885D899F2'
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
+            storePassword '0000001E623F926F296C85582D691861873EDF4CC22CA23783C908D5A969213A98AADFB4DA2A69C8CDC54170DA47'
+            keyAlias = 'harmonyandroid'
+            keyPassword '0000001E821DB6AF78D3D416B320C5DB990EF0870B46C94E9F880AF9A194C689323A75A6A6E9A0D56C77ED6C7B6E'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
-            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidRelease.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
         }
     }
-    legacyApkOptions{
+    legacyApkOptions {
         legacyApk rootProject.file('./android/android_entry.apk').absolutePath //混入apk的存放路径
-        signConfig{
-            storeFile rootProject.file('./android/harmony.jks')   //混入apk所用签名文件
+        signConfig {
+            storeFile rootProject.file('./android/harmonyandroid.jks')   //混入apk所用签名文件
         }
     }
     buildTypes {

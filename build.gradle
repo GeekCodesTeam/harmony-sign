@@ -5,22 +5,22 @@ apply plugin: 'com.huawei.ohos.app'
 ohos {
     signingConfigs {
         debug {
-            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
-            storePassword '0000001B3B73C671374D858277105D82AB4815C2C573D9280FD522A89E8AA677E1E33EF2A22FC967EE6670'
-            keyAlias = 'harmony'
-            keyPassword '0000001B37EC40FB85DC4098051B0156F8DFFF66286426E870B00A144C870BD42574A5EA5D99544160FF58'
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
+            storePassword '0000001EEDC1B1DE4588D1BF717442567A933BB3E943038A54CF30C5273289BC8723359103BCE2D11E092CDAC186'
+            keyAlias = 'harmonyandroid'
+            keyPassword '0000001E4DEAA3AF4DA9007509BD5FB158F7227B21A0ABBF3797721AC8357B0EC19454F5E0C4B9B2DF1AB95094A8'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
-            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidRelease.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
         }
         release {
-            storeFile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.p12')
-            storePassword '0000001B553E36DF5D9C78696A6C396AA573733789D21F0BDA3FAA2189B5D3A3AA9F61A5BAEFBF426C66CC'
-            keyAlias = 'harmony'
-            keyPassword '0000001BC293E9DBE63049E8B3FC5ED49CBEA9CE9C744829E8AB18C5FD26DA52A7E0588697EA6B366457B3'
+            storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
+            storePassword '0000001EACDDB36FAC21914CEFC701669631A1B56A3E06D10EC7E3CA7B9496B2628D3B1E320EC60A832D076E6A3A'
+            keyAlias = 'harmonyandroid'
+            keyPassword '0000001EB573175BEC5EF504005929644674CE3EE34A85BF83A85A3D31C1A6092065915042CB33B2E39DD5C5D14B'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmonyDebug.p7b')
-            certpath file('D:\\code\\lib7\\bumenyanfa\\harmony\\app_samples\\ability\\MyApplication10\\entry\\harmony.cer')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidRelease.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
         }
     }
     compileSdkVersion 5
