@@ -5,22 +5,22 @@ apply plugin: 'com.huawei.ohos.app'
 ohos {
     signingConfigs {
         debug {
-            storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
-            storePassword '0000001EFD0158939BFC3A3A2E16B9C961E3B95966581E0C7C24D7D95377FE8359CBE9D66D938305253B6923BB6F'
-            keyAlias = 'harmonyandroid'
-            keyPassword '0000001ECBDC68A6CC44C7FE4B164E819A74D4BFB8D3949012F43A3A8E1D75805BAB2F9DCEAAC43D101EB2FA4034'
+            storeFile file('C:\\Users\\fosung\\.ohos\\config\\auto_debug_2850086000447057455.p12')
+            storePassword '000000188225F8820B8072336F7250AB03B276C686BDCD8D9EEB007F4C2CF0E4B88F9C8C67F68005'
+            keyAlias = 'debugKey'
+            keyPassword '00000018664BF8C0429F93D2F89886F5AB72F4163A1AD916747097F5728DB01508438B0F6D4E7901'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidDebug.p7b')
-            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
+            profile file('C:\\Users\\fosung\\.ohos\\config\\auto_debug_test_2850086000447057455.p7b')
+            certpath file('C:\\Users\\fosung\\.ohos\\config\\auto_debug_2850086000447057455.cer')
         }
         release {
             storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
-            storePassword '0000001E4B39EF0F9D83729E05F8CF9CBF1153522541BCA3750797FA6A3E6C63EBD37A7F78C09EFF0D8E5A052579'
+            storePassword '0000001E67C0205DD81505A826822F0B66E431FA198D96BC229F3348388EE36AE3FCB9687A9C47BB0295A6009EAD'
             keyAlias = 'harmonyandroid'
-            keyPassword '0000001E569BD5936B87297B116FDF32A5F90DE40081B609445340EE22FFB933C3CAEC77D79019E6EDAEAAE1174A'
+            keyPassword '0000001E8F974EA37590FD8648C6A6276A6A86DF71326B580073D819C635F70625E01244F7D6C6FCF5993EE3DBD2'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidDebug.p7b')
-            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid2Release.p7b')
+            certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid2.cer')
         }
     }
     compileSdkVersion 5
