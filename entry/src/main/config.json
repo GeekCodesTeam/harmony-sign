@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.fosung.lighthouse.test1",
+    "bundleName": "com.fosung.lighthouse.test",
     "vendor": "example",
     "version": {
       "code": 1000000,
@@ -9,14 +9,13 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.fosung.lighthouse.test1",
+    "package": "com.fosung.lighthouse.test",
     "name": ".MyApplication",
-    "mainAbility": "com.fosung.lighthouse.test1.MainAbility",
     "deviceType": [
       "phone",
       "tablet",
-      "tv",
       "wearable",
+      "tv",
       "car"
     ],
     "distro": {
@@ -37,8 +36,9 @@
             ]
           }
         ],
-        "orientation": "unspecified",
-        "name": "com.fosung.lighthouse.test1.MainAbility",
+        "orientation": "portrait",
+        "visible": true,
+        "name": "com.fosung.lighthouse.test.EntryAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:entry_MainAbility",

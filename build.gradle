@@ -6,20 +6,20 @@ ohos {
     signingConfigs {
         debug {
             storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
-            storePassword '0000001EEDC1B1DE4588D1BF717442567A933BB3E943038A54CF30C5273289BC8723359103BCE2D11E092CDAC186'
+            storePassword '0000001EFD0158939BFC3A3A2E16B9C961E3B95966581E0C7C24D7D95377FE8359CBE9D66D938305253B6923BB6F'
             keyAlias = 'harmonyandroid'
-            keyPassword '0000001E4DEAA3AF4DA9007509BD5FB158F7227B21A0ABBF3797721AC8357B0EC19454F5E0C4B9B2DF1AB95094A8'
+            keyPassword '0000001ECBDC68A6CC44C7FE4B164E819A74D4BFB8D3949012F43A3A8E1D75805BAB2F9DCEAAC43D101EB2FA4034'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidRelease.p7b')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidDebug.p7b')
             certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
         }
         release {
             storeFile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.p12')
-            storePassword '0000001EACDDB36FAC21914CEFC701669631A1B56A3E06D10EC7E3CA7B9496B2628D3B1E320EC60A832D076E6A3A'
+            storePassword '0000001E4B39EF0F9D83729E05F8CF9CBF1153522541BCA3750797FA6A3E6C63EBD37A7F78C09EFF0D8E5A052579'
             keyAlias = 'harmonyandroid'
-            keyPassword '0000001EB573175BEC5EF504005929644674CE3EE34A85BF83A85A3D31C1A6092065915042CB33B2E39DD5C5D14B'
+            keyPassword '0000001E569BD5936B87297B116FDF32A5F90DE40081B609445340EE22FFB933C3CAEC77D79019E6EDAEAAE1174A'
             signAlg = 'SHA256withECDSA'
-            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidRelease.p7b')
+            profile file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroidDebug.p7b')
             certpath file('D:\\code\\lib7\\bumenyanfa\\github\\gat\\harmony-sign\\entry\\harmonyandroid.cer')
         }
     }
